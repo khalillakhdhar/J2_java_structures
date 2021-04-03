@@ -45,4 +45,19 @@ public class Indice {
 
 	}
 
+	public Indice(String nom, float poid, float taille) {
+		this.nom = nom;
+		this.poid = poid;
+		this.taille = taille;
+	}
+
+	@Override
+	public String toString() {
+		return "Indice de masse  [nom=" + nom + ", poid=" + poid + ", taille=" + taille + ", votre imc=" + calcule()
+				+ ", évaluation:" + evaluer() + "]";
+	}
+	
+	
+	
+
 }
